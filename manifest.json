@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "HeaderMod",
-  "version": "25.2",
+  "version": "25.3",
   "description": "Add or override HTTP request headers",
   "permissions": [
     "webRequest",
