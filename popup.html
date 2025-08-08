@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font: 12px sans-serif;
+      width: 500px;
+      margin: 0;
+      padding: 10px;
+      background: #f0f0f0;
+      box-sizing: border-box;
+    }
+
+    .rule {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      column-gap: 6px;
+      row-gap: 4px;
+      align-items: center;
+      padding: 4px;
+      margin-bottom: 4px;
+      background: #cdffff;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .rule.disabled {
+      background: #f9f9f9;
+    }
+
+    .rule label {
+      justify-self: end;
+      margin: 0;
+    }
+
+    .rule input[type="text"] {
+      width: 100%;
+      height: 20px;
+      padding: 1px 3px;
+      box-sizing: border-box;
+    }
+
+    .rule-footer {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rule-footer input.rule-comment {
+      flex: 1;
+      height: 20px;
+      padding: 1px 3px;
+      box-sizing: border-box;
+    }
+
+    .rule-footer label.enabled-label {
+      display: inline-flex;
+      align-items: center;
+      margin: 0;
+    }
+
+    .rule-footer button.delete {
+      margin-left: auto;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      padding: 0 4px;
+    }
+
+    .controls img {
+      flex-shrink: 0;
+    }
+
+    .controls .buttons {
+      display: inline-flex;
+    }
+
+    .controls .buttons button {
+      margin-left: 4px;
+      font-size: 12px;
+      padding: 2px 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="rules-container"></div>
+
+  <div class="controls">
+    <img src="icons/logo.png" alt="Logo">
+    <div class="buttons">
+      <button id="add-rule">Add Rule</button>
+      <button id="save">Save All</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
